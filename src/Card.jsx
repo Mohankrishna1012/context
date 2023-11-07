@@ -16,14 +16,7 @@ function Card({details}) {
                   })}
 
 
-        {/* { details.features.map((feature) => {
-                return <li className={feature.enable ?  `${<li><span className="fa-li"><i className="fas fa-check"></i></span></li>}` :
-                `${<li className="text-muted"><span className="fa-li"><i className="fas fa-check"></i></span></li>}`}>{feature.name}</li>
 
-            })
-            
-        } */}
-        {/* <li className="text-muted"><span className="fa-li"><i className="fas fa-times"></i></span></li> */}
       </ul>
       <div className="d-grid">
         <a href="#" className="btn btn-primary text-uppercase">Button</a>
