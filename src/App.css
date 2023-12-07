@@ -1,67 +1,59 @@
-section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, #0062e6, #33aeff);
+.backgroundClr{
+  background-color: #efedf2;
 }
-
-.pricing .card {
+.SelectTag{
+  background-color: #efedf2;
+  border : 1px solid rgb(14, 14, 14);
+  width: 35px;
+  border-radius: 5px;
+  
+}
+option {
+  overflow-y: scroll;
+}
+.RemoveButton{
+  background-color: #efedf2;
+  color: red;
   border: none;
-  border-radius: 1rem;
-  transition: all 0.2s;
-  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+/* App.css */
+
+.view-product-header {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.pricing hr {
-  margin: 1.5rem 0;
+.select-product-info {
+  font-size: 16px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+.product-dropdown {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
 }
 
-.pricing .card-title {
-  margin: 0.5rem 0;
-  font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
+/* Styling for the dropdown options */
+.product-dropdown option {
+  background-color: #fff;
+  border-color: #888;
+  color: #333;
 }
 
-.pricing .card-price {
-  font-size: 3rem;
-  margin: 0;
-}
-
-.pricing .card-price .period {
-  font-size: 0.8rem;
-}
-
-.pricing ul li {
-  margin-bottom: 1rem;
-}
-li::marker {
-  content: "";
-  font: size 0px;
-}
-
-.pricing .text-muted {
-  opacity: 0.7;
-}
-
-.pricing .btn {
-  font-size: 80%;
-  border-radius: 5rem;
-  letter-spacing: 0.1rem;
-  font-weight: bold;
-  padding: 1rem;
-  opacity: 0.7;
-  transition: all 0.2s;
-}
-
-/* Hover Effects on Card */
-
-@media (min-width: 992px) {
-  .pricing .card:hover {
-    margin-top: -0.25rem;
-    margin-bottom: 0.25rem;
-    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.3);
-  }
-
-  .pricing .card:hover .btn {
-    opacity: 1;
-  }
+.product-dropdown.form-select:hover,
+.product-dropdown.form-select:focus {
+  border-color: #888;
 }
